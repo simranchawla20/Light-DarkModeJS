@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fetching Data </title>
+        <Style>
+            #mode{
+                background-color: coral;
+                padding: auto;
+                width: 100px;
+                height: 50px;
+                margin: 20px;
+                color: black;
+            }
+            body{
+                text-align: center;
+            }
+        </Style>
+    </head>
+    <body>
+        <button id="mode">Dark Mode</button>
+        <p>fjkncmndsjjnkmplwkd;.,x;.;wl,;d,le,fokorjifjiojufgquhnofkjpoak;lk;9i;fopkdocpjiojkocmpkdmclmioajspklm;cjiodnjhnifjvcilhfbihbv
+            fjiojerkofnklmnjhnvijnfnklfnm,cl mlkmfk.</p>
+        <p>fjkncmndsjjnkmplwkd;.,x;.;wl,;d,le,fokorjifjiojufgquhnofkjpoak;lk;9i;fopkdocpjiojkocmpkdmclmioajspklm;cjiodnjhnifjvcilhfbihbv
+            fjiojerkofnklmnjhnvijnfnklfnm,cl mlkmfk.</p>
+        <p>fjkncmndsjjnkmplwkd;.,x;.;wl,;d,le,fokorjifjiojufgquhnofkjpoak;lk;9i;fopkdocpjiojkocmpkdmclmioajspklm;cjiodnjhnifjvcilhfbihbv
+            fjiojerkofnklmnjhnvijnfnklfnm,cl mlkmfk.</p>
+        <p>THANKYOUU!!</p>
+        <script>
+            var body=document.querySelector("body");
+            var button=document.getElementById("mode")
+            button.addEventListener("click", changeMode)
+            function changeMode(){
+                if(button.textContent=="Dark Mode"){
+                    body.style.background="black"
+                    body.style.color="white"
+                    button.textContent="Light Mode"
+                }
+                else if(button.textContent=="Light Mode"){
+                    body.style.background="white"
+                    body.style.color="black"
+                    button.textContent="Dark Mode"
+                }
+            }
+        </script>
+    </body>
+</html>
